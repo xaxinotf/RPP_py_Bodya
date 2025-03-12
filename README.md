@@ -22,13 +22,11 @@
 - **numba_pi.py**  
   Скрипт, що демонструє використання Numba для паралельних обчислень. Використовуючи декоратори `@njit` та конструкцію `prange`, ми реалізуємо обчислення π як у послідовному, так і в паралельному режимах для двох різних методів:  
   - **Method #1 (Rectangles):** Обчислення π за формулою  
-    \[
-    \pi \approx \text{step} \times \sum_{i=0}^{N-1} \frac{4}{1+(x_i)^2}, \quad x_i = \left(i+\frac{1}{2}\right)\text{step}
-    \]
+![image](https://github.com/user-attachments/assets/d9386d54-33fb-4026-81bc-6a746af82f7f)
+
   - **Method #2 (Quarter Circle):** Обчислення π через інтегральне обчислення площі чверті кола  
-    \[
-    \pi \approx 4 \times \text{step} \times \sum_{i=0}^{N-1} \sqrt{1-x_i^2}, \quad x_i = \left(i+\frac{1}{2}\right)\text{step}
-    \]  
+![image](https://github.com/user-attachments/assets/4f0f666a-d0bd-4258-a67f-b15dd3801a11)
+ 
   За допомогою аргументу командного рядка можна задати кількість потоків.  
   **Приклади запуску:**  
   ```powershell
